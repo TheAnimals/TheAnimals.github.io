@@ -225,13 +225,10 @@ nav ul a:active {
     scroll-margin-top: calc(var(--height-header) + var(--height-nav));
 }
 
-footer {
-    padding: 10px;
-}
-
 footer ul {
     list-style-type: none;
     height: 100%;
+    padding: 10px;
 }
 
 footer ul a {
