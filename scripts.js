@@ -1,10 +1,12 @@
 console.log("Loading...");
+
 const hamburger = document.getElementById("hamburger");
-hamburger.classList.add("test");
 const nav = document.getElementById("nav");
+
 var hidden = true;
 var x = window.innerWidth;
 if (x < 768) hide();
+
 console.log("Done!");
 
 function hide () {

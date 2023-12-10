@@ -1,0 +1,379 @@
+/* Stylesheet - animals.be */
+/* Author: Riptide00 */
+
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: galhau;
+    src: url(fonts/Galhau_Heavy.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Variables */
+
+:root {
+    /* Colors */
+    --color-main: rgb(29, 29, 29); 
+    --color-accent: rgb(53, 53, 53);
+
+    --color-text-dark: rgb(0, 0, 0);
+    --color-text-light: rgb(255, 255, 255);
+
+    /* Layout*/
+    --height-header: 100px;
+    --height-nav: 30px;
+    --height-footer: 150px;
+
+    /* Fonts*/
+    --font-animals: galhau;
+    --font-normal: montserrat;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    animation: fadeIn;
+    animation-duration: 3;
+}
+
+/* Defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-normal);
+    color: var(--color-text-dark);
+    font-size: 18px;
+}
+
+/* Layout */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+header {
+    height: var(--height-header);
+    width: 100vw;
+}
+
+nav {
+    height: var(--height-nav);
+    width: 100vw;
+}
+
+main {
+    padding-top: calc(var(--height-header) + var(--height-nav));
+    min-height: calc(100vh - (var(--height-header) + var(--height-nav)));
+    width: 100vw;
+    overflow: hidden;
+}
+
+.section {
+    min-height: calc(100vh - (var(--height-header) + var(--height-nav)));
+    width: 100%;
+}
+
+footer {
+    height: var(--height-footer);
+    width: 100vw;
+}
+
+/* Layout Colors */
+
+header {
+    background: linear-gradient(170deg, var(--color-main) 0%, var(--color-accent) 100%);
+    border-bottom: 2px solid var(--color-accent);
+    color: var(--color-text-light);
+}
+
+nav {
+    background: var(--color-main);
+    background: linear-gradient(170deg, var(--color-main) 0%, var(--color-accent) 100%);
+    color: var(--color-text-light);
+}
+
+footer {
+    background: var(--color-main);
+    background: linear-gradient(170deg, var(--color-main) 0%, var(--color-accent) 100%);
+    color: var(--color-text-light);
+}
+
+/*  Layout styles */
+
+.hamburger {
+    display: none;
+    height: 10vmin;
+}
+
+header p {
+    font-family: var(--font-animals);
+    font-size: 11vmin;
+}
+
+header img {
+    height: 10vmin;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 100%;
+}
+
+nav ul li {
+    height: var(--height-nav);
+    width: 100%;
+}
+
+nav ul li a {
+    height: var(--height-nav);
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 2vmin;
+}
+
+nav ul a:link {
+    color: var(--color-text-light);
+}
+
+nav ul a:visited {
+    color: var(--color-text-light);
+}
+
+nav ul a:hover {
+    color: var(--color-text-light);
+    background-color: var(--color-main);
+    font-weight: bolder;
+}
+
+nav ul a:active {
+    color: var(--color-text-light);
+}
+
+.section {
+    padding: 10px;
+    scroll-margin-top: calc(var(--height-header) + var(--height-nav));
+}
+
+footer {
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    height: 100%;
+}
+
+footer ul a {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+footer ul a:link {
+    color: var(--color-text-light);
+}
+
+footer ul a:visited {
+    color: var(--color-text-light);
+}
+
+footer ul a:hover {
+    color: var(--color-text-light);
+    font-weight: bolder;
+}
+
+footer ul a:active {
+    color: var(--color-text-light);
+}
+
+/* Sections */
+
+/*
+.home {
+    background-color: aqua;
+}
+
+.training {
+    background-color: greenyellow;
+}
+
+.contact {
+    background-color: royalblue;
+}
+
+.onsteam {
+    background-color: blueviolet;
+}
+*/
+
+/* Elements */
+
+.info {
+
+}
+
+.button {
+
+}
+
+.go {
+
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.center-h {
+    justify-content: center;
+}
+
+.center-v {
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-hidden-y {
+    overflow-y: hidden;
+}
+
+.overflow-hidden-x {
+    overflow-x: hidden;
+}
+
+.select-none {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive layout design */
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        height: calc(var(--height-nav) * 4);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding-top: calc(var(--height-header));
+        min-height: calc(100vh - var(--height-header));
+    }
+
+    .section {
+        min-height: calc(100vh - var(--height-header));
+        scroll-margin-top: var(--height-header);
+    }
+}
