@@ -11,11 +11,11 @@
     </head>
 
     <body class="overflow-hidden-x">
-        <div class="sticky overflow-hidden">
+        <div class="sticky">
             <header class="flex row space-around center-v select-none">
                 <div class="hamburger-container" id="hamburger"><i class="fa-solid fa-bars hamburger"></i></div>
                 <p>Animals</p>
-                <img src="images/claw3.png" alt="claw3.png" class="tigerclaws no-interaction">
+                <img src="images/claw3.png" alt="claw3.png">
             </header>
             <nav id="nav">
                 <ul class="flex space-around">
@@ -26,9 +26,64 @@
                 </ul>
             </nav>
         </div>
-        <main class="overflow-hidden">
-            <div class="section home" id="home">
-                <h1>home</h1>
+        <main>
+            <div class="section home flex column center-v space-around" id="home">
+                <div class="padding-10">
+                    <ul class="disciplines flex row space-around fadeIn">
+                        <li>Boxing</li>
+                        <li><i class="fa-solid fa-circle fa-xs"></i></li>
+                        <li>Thaibox</li>
+                        <li><i class="fa-solid fa-circle fa-xs"></i></li>
+                        <li>MMA</li>
+                        <li><i class="fa-solid fa-circle fa-xs"></i></li>
+                        <li>Muay Thai</li>
+                        <li><i class="fa-solid fa-circle fa-xs"></i></li>
+                        <li>Meer...</li>
+                    </ul>
+                </div>
+                <div class="flex row wrap center-h">
+                    <div class="schedule flex column rounded padding-10">
+                        <div class="padding-10"></div>
+                        <div class="flex row space-around center-v">
+                            <p class="half">Maandag</p>
+                            <div class="flex column three-quarters">
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Thaibox</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">20:45</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Boxing</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">20:45</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">MMA</p> <p class="time">20:45</p> <p class="time">-</p> <p class="time">22:00</p></div>
+                            </div>
+                        </div>
+                        <div class="padding-10"></div>
+                        <div class="flex row space-around center-v">
+                            <p class="half">Dinsdag</p>
+                            <div class="flex column three-quarters">
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Thaibox</p> <p class="time">20:00</p> <p class="time">-</p> <p class="time">21:00</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Boxing</p> <p class="time">20:00</p> <p class="time">-</p> <p class="time">21:00</p></div>
+                            </div>
+                        </div>
+                        <div class="padding-10"></div>
+                        <div class="flex row space-around center-v">
+                            <p class="half">Woensdag</p>
+                            <div class="flex column three-quarters">
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Thaibox</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">20:45</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Boxing</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">20:45</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">MMA</p> <p class="time">20:45</p> <p class="time">-</p> <p class="time">22:00</p></div>
+                            </div>
+                        </div>
+                        <div class="padding-10"></div>
+                        <div class="flex row space-around center-v">
+                            <p class="half">Vrijdag</p>
+                            <div class="flex column three-quarters">
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Thaibox</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">21:00</p></div>
+                                <div class="flex row space-evenly padding-5 center-v"><p class="bolder padding-5 discipline">Boxing</p> <p class="time">19:30</p> <p class="time">-</p> <p class="time">21:00</p></div>
+                            </div>
+                        </div>
+                        <div class="padding-10"></div>
+                        <p class="padding-10">Predikherenhoevestraat 31, 2840 Rumst</p>
+                    </div>
+                    <div class="info padding-20 flex column center-h">
+                        <q class="fadeIn">Wij trachten een zo goed mogelijke begeleiding voor onze leden aan te bieden zodat bepaalde doelstellingen kunnen behaald worden. Dit met  respect voor elk individu dat bij ons komt trainen.</q>
+                    </div>
+                </div>
             </div>
             <div class="section training" id="training">
                 
@@ -40,7 +95,7 @@
                 
             </div>
         </main>
-        <footer class="overflow-hidden">
+        <footer>
             <ul class="flex column space-around">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#training">Training</a></li>

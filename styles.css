@@ -98,7 +98,7 @@ table {
 
 .fadeIn {
     animation: fadeIn;
-    animation-duration: 3;
+    animation-duration: 5s;
 }
 
 /* Defaults */
@@ -178,7 +178,7 @@ footer {
 
 header p {
     font-family: var(--font-animals);
-    font-size: 11vmin;
+    font-size: 10vmin;
 }
 
 header img {
@@ -221,19 +221,19 @@ nav ul a:active {
 }
 
 .section {
-    padding: 10px;
     scroll-margin-top: calc(var(--height-header) + var(--height-nav));
 }
 
 footer ul {
     list-style-type: none;
     height: 100%;
-    padding: 10px;
+    margin: 5px;
 }
 
 footer ul a {
     color: var(--color-text-light);
     text-decoration: none;
+    font-size: 2vmin;
 }
 
 footer ul a:link {
@@ -255,28 +255,65 @@ footer ul a:active {
 
 /* Sections */
 
-/*
 .home {
-    background-color: aqua;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/pexels-cottonbro-studio-4761616.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-text-light);
 }
 
 .training {
-    background-color: greenyellow;
+    
 }
 
 .contact {
-    background-color: royalblue;
+    
 }
 
 .onsteam {
-    background-color: blueviolet;
+    
 }
-*/
 
 /* Elements */
 
 .info {
+    max-width: 500px;
+}
 
+.disciplines {
+    width: 80vw;
+    font-size: 3vmin;
+}
+
+q {
+    font-weight: bolder;
+    font-size: 4vmin;
+}
+
+q::after {
+    content: '"';
+}
+
+q::before {
+    content: '"';
+}
+
+.schedule {
+    background-color: var(--color-accent);
+    border: solid 2px var(--color-text-light);
+    opacity: 0.8;
+    width: 80vmin;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.schedule .discipline {
+    min-width: 75px;
+}
+
+.schedule .time {
+    min-width: 50px;
 }
 
 .button {
@@ -289,6 +326,20 @@ footer ul a:active {
 
 .rounded {
     border-radius: 5px;
+}
+
+.card {
+    background-color: var(--color-accent);
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.half {
+    width: 50%;
+}
+
+.three-quarters {
+    width: 75%;
 }
 
 .flex {
@@ -323,6 +374,10 @@ footer ul a:active {
     justify-content: space-around;
 }
 
+.space-evenly {
+    justify-content: space-evenly;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -348,6 +403,26 @@ footer ul a:active {
     display: none;
 }
 
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.margin-5 {
+    margin: 5px;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
 /* Responsive layout design */
 
 @media only screen and (max-width: 768px) {
@@ -364,6 +439,10 @@ footer ul a:active {
         flex-direction: column;
     }
 
+    nav ul li a {
+        font-size: 3vmin;
+    }
+
     main {
         padding-top: calc(var(--height-header));
         min-height: calc(100vh - var(--height-header));
@@ -372,5 +451,9 @@ footer ul a:active {
     .section {
         min-height: calc(100vh - var(--height-header));
         scroll-margin-top: var(--height-header);
+    }
+
+    footer ul a {
+        font-size: 2.5vmin;
     }
 }
