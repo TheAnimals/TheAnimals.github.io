@@ -182,7 +182,7 @@ header p {
 }
 
 header img {
-    height: 10vmin;
+    height: 90%;
 }
 
 nav ul {
@@ -308,12 +308,8 @@ q::before {
     font-size: 3vmin;
 }
 
-.schedule .discipline {
-    min-width: 75px;
-}
-
-.schedule .time {
-    min-width: 50px;
+.schedule p {
+    width: 15vmin;
 }
 
 .button {
@@ -332,6 +328,10 @@ q::before {
     background-color: var(--color-accent);
     max-width: 400px;
     max-height: 200px;
+}
+
+.quarter {
+    width: 25%;
 }
 
 .half {
@@ -421,6 +421,10 @@ q::before {
 
 .bolder {
     font-weight: bolder;
+}
+
+.width-auto {
+    width: auto !important;
 }
 
 /* Responsive layout design */
