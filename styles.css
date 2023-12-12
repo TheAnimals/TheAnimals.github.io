@@ -87,6 +87,12 @@ table {
     /* Fonts*/
     --font-animals: galhau;
     --font-normal: montserrat;
+
+    --font-size-xs: 1.5vmin;
+    --font-size-small: 1.7vmin;
+    --font-size-medium: 2.2vmin;
+    --font-size-big: 3vmin;
+    --font-size-xl: 4vmin;
 }
 
 /* Animations */
@@ -110,7 +116,7 @@ html {
 body {
     font-family: var(--font-normal);
     color: var(--color-text-dark);
-    font-size: 18px;
+    font-size: var(--font-size-medium);
 }
 
 ul {
@@ -204,7 +210,7 @@ nav ul li a {
     height: var(--height-nav);
     color: var(--color-text-light);
     text-decoration: none;
-    font-size: 2vmin;
+    font-size: var(--font-size-medium);
 }
 
 nav ul a:link {
@@ -237,7 +243,7 @@ footer ul {
 footer ul a {
     color: var(--color-text-light);
     text-decoration: none;
-    font-size: 2vmin;
+    font-size: var(--font-size-medium);
 }
 
 footer ul a:link {
@@ -267,6 +273,7 @@ footer ul a:active {
     color: var(--color-text-light);
 }
 
+/*
 .training {
 
 }
@@ -278,6 +285,7 @@ footer ul a:active {
 .onsteam {
     
 }
+*/
 
 /* Elements */
 
@@ -293,7 +301,7 @@ footer ul a:active {
 
 .info q {
     font-weight: bolder;
-    font-size: 4vmin;
+    font-size: var(--font-size-xl);
 }
 
 .info q::after {
@@ -308,22 +316,22 @@ footer ul a:active {
     font-weight: bolder;
     text-decoration: underline;
     margin: 5px;
-    font-size: 3vmin;
+    font-size: var(--font-size-big);
 }
 
 .info p {
     margin: 5px;
-    font-size: 2.5vmin;
+    font-size: var(--font-size-medium);
 }
 
 .info ul {
     margin: 5px;
-    font-size: 2.5vmin;
+    font-size: var(--font-size-medium);
 }
 
 .disciplines {
     width: 80vw;
-    font-size: 3vmin;
+    font-size: var(--font-size-medium);
 }
 
 .schedule {
@@ -332,7 +340,7 @@ footer ul a:active {
     opacity: 0.8;
     width: 80vmin;
     text-align: center;
-    font-size: 3vmin;
+    font-size: var(--font-size-medium);
 }
 
 .schedule p {
@@ -343,7 +351,7 @@ footer ul a:active {
     background-color: var(--color-main);
     color: var(--color-text-light);
     text-decoration: none;
-    font-size: 4vmin;
+    font-size: var(--font-size-medium);
 }
 
 .button:hover {
@@ -358,57 +366,42 @@ footer ul a:active {
     border-radius: 90px;
 }
 
-.card {
+.prices .card {
     position: relative;
 
     background-color: var(--color-accent);
     color: var(--color-text-light);
-
-    max-width: 400px;
-    max-height: 200px;
+    width: 20vmin;
+    height: 30vmin;
 }
 
-.card p {
-    padding: 15px;
-    margin-top: -5px;
-    padding-bottom: 10px;
-}
-
-.card ul {
-    font-size: 0.85em;
+.prices .card ul {
+    font-size: var(--font-size-small);
 }
 
 .prices .card {
-    height: 540px;
-    width: 200px;
     margin: 5px;
 }
 
 .prices .card .top {
     background-color: var(--color-main);
     width: 100%;
-    font-size: 0.85em;
+    font-size: var(--font-size-small);
+}
+
+.prices .card .push {
+    background-color: var(--color-accent);
+    width: 100%;
+    font-size: var(--font-size-small);
+    height: var(--font-size-small);
 }
 
 .prices .card .price {
-    position: absolute;
-    top: 35px;
-    height: 50px;
-    width: 100%;
-    font-size: 3em;
+    font-size: var(--font-size-xl);
 }
 
 .prices .card .per {
-    position: absolute;
-    top: 95px;
-    height: 10px;
-    width: 100%;
-    font-size: 0.7em;
-}
-
-.prices .card ul {
-    position: absolute;
-    top: 120px;
+    font-size: var(--font-size-xs);
 }
 
 .quarter {
@@ -517,7 +510,7 @@ footer ul a:active {
 }
 
 .aqua {
-    background-color: aqua;
+    background-color: aqua !important;
 }
 
 .border {
@@ -545,7 +538,7 @@ footer ul a:active {
     }
 
     nav ul li a {
-        font-size: 3vmin;
+        font-size: var(--font-size-medium);
     }
 
     main {
@@ -559,6 +552,6 @@ footer ul a:active {
     }
 
     footer ul a {
-        font-size: 2.5vmin;
+        font-size: var(--font-size-medium);
     }
 }
