@@ -113,6 +113,11 @@ body {
     font-size: 18px;
 }
 
+ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
 /* Layout */
 
 .sticky {
@@ -227,7 +232,6 @@ nav ul a:active {
 footer ul {
     list-style-type: none;
     height: 100%;
-    margin: 5px;
 }
 
 footer ul a {
@@ -264,7 +268,7 @@ footer ul a:active {
 }
 
 .training {
-    
+
 }
 
 .contact {
@@ -278,25 +282,48 @@ footer ul a:active {
 /* Elements */
 
 .info {
+    margin: 2vmin;
+    max-width: 90vw;
+    flex: 1 1 0px;
+}
+
+.info q {
     max-width: 500px;
+}
+
+.info q {
+    font-weight: bolder;
+    font-size: 4vmin;
+}
+
+.info q::after {
+    content: '"';
+}
+
+.info q::before {
+    content: '"';
+}
+
+.info h3 {
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 3vmin;
+}
+
+.info p {
+    margin: 5px;
+    font-size: 2.5vmin;
+}
+
+.info ul {
+    margin: 5px;
+    font-size: 2.5vmin;
 }
 
 .disciplines {
     width: 80vw;
     font-size: 3vmin;
-}
-
-q {
-    font-weight: bolder;
-    font-size: 4vmin;
-}
-
-q::after {
-    content: '"';
-}
-
-q::before {
-    content: '"';
 }
 
 .schedule {
@@ -313,21 +340,75 @@ q::before {
 }
 
 .button {
-
+    background-color: var(--color-main);
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 4vmin;
 }
 
-.go {
-
+.button:hover {
+    font-weight: bolder;
 }
 
 .rounded {
     border-radius: 5px;
 }
 
+.round {
+    border-radius: 90px;
+}
+
 .card {
+    position: relative;
+
     background-color: var(--color-accent);
+    color: var(--color-text-light);
+
     max-width: 400px;
     max-height: 200px;
+}
+
+.card p {
+    padding: 15px;
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+.card ul {
+    font-size: 0.85em;
+}
+
+.prices .card {
+    height: 540px;
+    width: 200px;
+    margin: 5px;
+}
+
+.prices .card .top {
+    background-color: var(--color-main);
+    width: 100%;
+    font-size: 0.85em;
+}
+
+.prices .card .price {
+    position: absolute;
+    top: 35px;
+    height: 50px;
+    width: 100%;
+    font-size: 3em;
+}
+
+.prices .card .per {
+    position: absolute;
+    top: 95px;
+    height: 10px;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.prices .card ul {
+    position: absolute;
+    top: 120px;
 }
 
 .quarter {
@@ -378,6 +459,10 @@ q::before {
     justify-content: space-evenly;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -419,12 +504,28 @@ q::before {
     margin: 5px;
 }
 
+.margin-25 {
+    margin: 25px;
+}
+
 .bolder {
     font-weight: bolder;
 }
 
 .width-auto {
     width: auto !important;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.border {
+    border: 2px solid var(--color-main);
+}
+
+.no-style {
+    list-style: none;
 }
 
 /* Responsive layout design */
