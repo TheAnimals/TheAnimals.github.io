@@ -66,5 +66,5 @@ function checkNav() {
  * Add click event listener to hamburger menu that calls toggleMenu function.
  * Add resize event listener to window that calls checkNav function.
  */
-hamburger.addEventListener('click', toggleMenu)
-window.addEventListener("resize", checkNav)
+hamburger.addEventListener('click', toggleMenu);
+window.addEventListener('resize', checkNav);
